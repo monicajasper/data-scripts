@@ -1,0 +1,24 @@
+#Excel cheatsheet - For those common excel shifts that make you go |Dolt!|
+
+
+
+#Date Time Conversion Excel - Excel Formula Language
+
+=DATEVALUE(TEXT(A14,"dd/mm/yyyy"))+TIMEVALUE(TEXT(B14,"hh:mm:ss"))
+
+where A14 in this format:6/07/2021
+and B14 in this format:1:57:59 PM (format cells converted to 13:57:59)
+
+
+
+#Vlookup Approximate Match
+
+looking to match column D (13 down)
+
+referencing another sheet (BX23_0044_Baro) with datetime info (column A) and barometric pressure (m H2O) (column B) forms the fixed ($) lookup table ($A$4:$B$37156)
+
+column 2 of the lookup table is the value to return (baro m H20)
+
+optional 4th value, FALSE if exact match required; default if not specified yields approximate match
+
+=VLOOKUP(D13,BX23_0044_Baro!$A$4:$B$37156, 2)
