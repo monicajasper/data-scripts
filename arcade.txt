@@ -1,0 +1,3 @@
+
+formatting labels with superscript etc
+https://pro.arcgis.com/en/pro-app/latest/help/mapping/text/text-formatting-tags.htm
